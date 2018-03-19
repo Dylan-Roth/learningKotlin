@@ -1,5 +1,21 @@
 package homework
 
+fun incrementNumberByTwo(startingNumber: Int): Int{
+    val incrementedNumber = startingNumber + 2;
+    return incrementedNumber
+}
+
+fun printEvenNumbers(start: Int, finish: Int){
+    var x = start;
+    print("$x");
+    x++;
+    x++;
+    while (x <= finish) {
+        print(", $x");
+        x++;
+        x++;
+    }
+}
 /**
 Programming exercises:
  * Write a function to print “Hello $name” where name is a function argument
