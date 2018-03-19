@@ -1,5 +1,13 @@
 package homework
 
+fun printName(name: String) {
+    println("Hello $name")
+}
+
+fun printMyName(){
+    return printName("Dylan")
+}
+
 /**
 Programming exercises:
  * Write a function to print “Hello $name” where name is a function argument
