@@ -17,3 +17,17 @@ Programming exercises:
      * def run() -> prints dog is running, make isHungry to true
      * def eat() -> if Hungry, print Dog eats, if not hungry, print Dog refuses to eat.
  */
+
+fun printFib(until: Int) {
+    val until = 100
+    var t1 = 0
+    var t2 = 1
+
+    while (t1 <= until) {
+        print("$t1 ")
+
+        val sum = t1 + t2
+        t1 = t2
+        t2 = sum
+    }
+}
