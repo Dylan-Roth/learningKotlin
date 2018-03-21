@@ -7,7 +7,19 @@ fun incrementNumberByTwo(startingNumber: Int): Int{
 
 fun printEvenNumbers(start: Int, finish: Int){
     var x = start;
-    print("$x");
+    if (x % 2 == 0) {
+        print("$x");
+        x++;
+        x++;
+        while (x <= finish) {
+            print(", $x");
+            x++;
+            x++;
+        }
+    }
+    else
+        x++;
+        print("$x");
     x++;
     x++;
     while (x <= finish) {

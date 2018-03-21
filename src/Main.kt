@@ -22,5 +22,5 @@ fun main(args: Array<String>) {
 //    println("Your name is $name")
 
     // Print Even Numbers Homework. I don't know how to make it print even numbers if I start with an odd number!
-    printEvenNumbers(2,50)
+    printEvenNumbers(1,10)
 }
