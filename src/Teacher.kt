@@ -1,9 +1,10 @@
-class Teacher(
-        var firstName: String,
-        var lastName: String,
-        var age: Int,
-        var gender: String,
-        var currentSubject: String
-){
+class Teacher : Person {
 
+    val currentSubject: String,
+            val students: List<Students>
+
+    constructor(firstName: String,
+                lastName: String,
+                age: Int,
+                gender: String) : super(firstName, lastName, age, gender)
 }

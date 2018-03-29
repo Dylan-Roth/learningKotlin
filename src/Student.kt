@@ -1,11 +1,12 @@
-class Student(
-        val firstName: String,
-        val lastName: String,
-        val age: Int,
-        val gender: String,
+class Student : Person {
         val favoriteSubject: String,
         val numericGrade: Int
-              ) {
+
+    constructor(firstName: String, lastName: String, age: Int, gender: String, favoriteSubject: String, numericGrade: Int) : super(firstName, lastName, age, gender) {
+        this.favoriteSubject = favoriteSubject
+        this.numericGrade = numericGrade
+    }
+}
 
 fun getLetterGrade(numericGrade: Int): String {
     var x = numericGrade
