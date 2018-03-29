@@ -1,9 +1,6 @@
-class Teacher(
+class Person(
         var firstName: String,
         var lastName: String,
         var age: Int,
-        var gender: String,
-        var currentSubject: String
-){
-
-}
+        var gender: String
+)
